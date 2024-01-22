@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-import { Config } from '@docusaurus/types';
+import type { Config } from '@docusaurus/types';
 
 const { parseEnv } = require('./src/utils/env');
 const { generateTypedocDocusaurusPlugins } = require('./docusaurus.typedoc.js');
@@ -171,11 +171,11 @@ const config: Config = {
     // Sidebar order is decided by the position in the array below
     ...(env.TYPEDOC
       ? generateTypedocDocusaurusPlugins([
-          'server',
-          'client',
-          'react-query',
-          'next',
-        ])
+        'server',
+        'client',
+        'react-query',
+        'next',
+      ])
       : []),
     async function myPlugin() {
       return {
@@ -243,14 +243,14 @@ const config: Config = {
         },
       },
     ],
-    [
-      'docusaurus-preset-shiki-twoslash',
-      {
-        // Not sure how reliable this path is (it's relative from the preset package)?
-        // None of the light themes had good support for `diff` mode, so had to patch my own theme
-        themes: ['../../../../../../www/min-light-with-diff', 'github-dark'],
-      },
-    ],
+    // [
+    //   'docusaurus-preset-shiki-twoslash',
+    //   {
+    //     // Not sure how reliable this path is (it's relative from the preset package)?
+    //     // None of the light themes had good support for `diff` mode, so had to patch my own theme
+    //     themes: ['../../../../../../www/min-light-with-diff', 'github-dark'],
+    //   },
+    // ],
   ],
   scripts: [
     {

@@ -4,7 +4,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.workingDirectories": [
+    "eslint.workingDirectories": [
     { "pattern": "./examples/**" },
     { "pattern": "./packages/*" },
     { "pattern": "./www/*" }

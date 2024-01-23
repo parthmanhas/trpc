@@ -243,14 +243,14 @@ const config: Config = {
         },
       },
     ],
-    // [
-    //   'docusaurus-preset-shiki-twoslash',
-    //   {
-    //     // Not sure how reliable this path is (it's relative from the preset package)?
-    //     // None of the light themes had good support for `diff` mode, so had to patch my own theme
-    //     themes: ['../../../../../../www/min-light-with-diff', 'github-dark'],
-    //   },
-    // ],
+    [
+      'docusaurus-preset-shiki-twoslash',
+      {
+        // Not sure how reliable this path is (it's relative from the preset package)?
+        // None of the light themes had good support for `diff` mode, so had to patch my own theme
+        themes: ['../../../../../../www/min-light-with-diff', 'github-dark'],
+      },
+    ],
   ],
   scripts: [
     {
